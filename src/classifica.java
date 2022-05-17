@@ -20,13 +20,13 @@ public class classifica
         }
     }
 
-    public persona getI(int i)
+    public void stampaRisultati()
     {
-        return parziale.get(i);
+        for (int index = 0; index < parziale.size(); index++) 
+        {
+            System.out.println(parziale.get(index).nome + " ha finito la gara in:" + parziale.get(index).tempo + "millisecondi");
+        }
     }
 
-    public int getSize()
-    {
-        return parziale.size();
-    }
+   
 }

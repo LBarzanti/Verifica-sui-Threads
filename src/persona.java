@@ -27,7 +27,7 @@ public class persona extends Thread
     public void usaSpogliatoio()
     {
         s.P();
-        try{this.wait();}
+        try{Thread.sleep((long) (Math.random()*1000));}
         catch(InterruptedException e){}
         s.V();
     }

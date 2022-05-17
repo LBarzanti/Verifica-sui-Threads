@@ -30,9 +30,6 @@ public class App extends Thread
         p7.join();
         p8.join();
 
-        for (int i = 0; i < c.getSize(); i++) 
-        {
-            System.out.println(c.getI(i));
-        }
+        c.stampaRisultati();
     }
 }
